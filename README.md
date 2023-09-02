@@ -4,14 +4,6 @@
 
 SW Search is a web application that uses the Star Wars API (SWAPI) to enable users to search for characters and movies from the Star Wars franchise.
 
-## Demo
-
-[Demo the App](https://www.example.com)
-
-To run SW Search, you need the following installed on your system:
-
-    Web browser (e.g., Chrome, Firefox, Edge)
-
 ## Usage
 
 * Type the name of a character or movie in the search bar.
