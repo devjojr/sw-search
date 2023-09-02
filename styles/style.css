@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  background: #f5f5f5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
+
+header {
+  padding: 20px 40px;
+  background: #fff;
+  align-items: center;
+}
+
+header h1 {
+  grid-column: span 6;
+}
+
+header nav {
+  grid-column: span 6;
+  justify-self: end;
+}
+
+header nav a {
+  color: #333;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+main > h1 {
+  grid-column: span 12;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+main > .star-search {
+  grid-column: span 12;
+  text-align: center;
+  padding-top: 20px;
+}
+
+input,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+input#searchInput {
+  background-color: #222;
+  color: #fff;
+  font-size: 1.2em;
+  padding: 10px;
+  border: 2px solid #f8c920;
+  border-radius: 5px;
+  outline: none;
+  width: 300px;
+  transition: border-color 0.3s;
+}
+
+input#searchInput::placeholder {
+  color: #ccc;
+}
+
+input#searchInput:focus {
+  border-color: #f8c920;
+}
+
+button#search-btn {
+  background-color: #f8c920;
+  color: #222;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#search-btn:hover {
+  background-color: #ffeb83;
+}
+
+#resultsSection {
+  padding-top: 20px;
+}
+
+#resultsSection a {
+  color: #333;
+  text-decoration: none;
+}
+
+#resultsSection a:visited {
+  color: #333;
+}
+
+#resultsSection a:hover {
+  color: #525050;
+}
+
+main .card {
+  grid-column: span 6;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card a {
+  color: #333;
+}
+
+.card a:visited {
+  color: #333;
+}
+
+.card a:hover {
+  color: #525050;
+}
+
+#character-card span {
+  padding-right: 10px;
+}
+
+button.back-btn {
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.back-btn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 960px) {
+  main img {
+    grid-column: 2 / span 10;
+  }
+
+  main {
+    grid-column: 3 / span 8;
+    text-align: center;
+  }
+
+  main .card {
+    grid-column: 3 / span 8;
+  }
+
+  main .back-btn {
+    grid-column: 3 / span 8;
+  }
+}
